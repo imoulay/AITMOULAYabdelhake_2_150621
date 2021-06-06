@@ -6,6 +6,10 @@
   padding: 0;
   list-style: none;
 }
+a {
+  text-decoration: none;
+  transition: 0.2s;
+}
 body {
   font-family: "Raleway", sans-serif;
   margin-left: 30px;
@@ -19,20 +23,19 @@ nav {
 nav ul {
   display: flex;
 }
-nav li {
+nav li a {
   margin-right: 50px;
-}
-nav a {
   color: #0065fc;
+}
+.nav-connect {
   font-weight: bold;
-  text-decoration: none;
 }
-nav a:hover {
-  font-weight: normal;
-  text-decoration: underline;
-  text-decoration-line: overline;
+.nav-a:hover {
+  font-weight: bold;
+  border-top-width: 3px;
+  padding-block-start: 60px;
+  border-top-style: solid;
 }
-nav a:visited {
-  color: #7c7c7c;
-  font-weight: normal;
+.menu-nav:visited {
+  color: gray;
 }

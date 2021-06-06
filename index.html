@@ -10,20 +10,21 @@
       crossorigin="anonymous"
     ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <title>Résevia</title>
   </head>
   <body>
     <header>
-      <nav>
-        <img src="images/logo/Reservia.svg" alt="logo Reservia" />
-        <ul class="navigation">
-          <li><a href="#">Hébergement</a></li>
-          <li><a href="#">Activités</a></li>
-          <li><a href="#">S'inscrire</a></li>
+      <nav class="nav">
+        <img class="nav-img" src="images/logo/Reservia.svg" alt="logo Reservia" />
+        <ul class="nav-ul">
+          <li><a class="nav-a" href="#">Hébergement</a></li>
+          <li><a class="nav-a" href="#">Activités</a></li>
+          <li><a class="nav-connect" href="#">S'inscrire</a></li>
         </ul>
       </nav>
     </header>
@@ -63,73 +64,23 @@
       <div>
         <h2>Hébergement à Marseille</h2>
         <div>
-          <div>
-            <h3 class="titre-hebergement">Auberge la Cannebière</h3>
-            <br />
-            <p class="prix">Nuit à partir de 25€</p>
-            <br />
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <div>
-            <h3 class="titre-hebergement">Hôtel du port</h3>
-            <br />
-            <p class="prix">Nuit à partir de 25€</p>
-            <br />
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <div>
-            <h3 class="titre-hebergement">Hôtel Les mouettes</h3>
-            <br />
-            <p class="prix">Nuit à partir de 25€</p>
-            <br />
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <div>
-            <h3 class="titre-hebergement">Hôtel de la mer</h3>
-            <br />
-            <p class="prix">Nuit à partir de 25€</p>
-            <br />
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <div>
-            <h3 class="titre-hebergement">Auberge Le Panier</h3>
-            <br />
-            <p class="prix">Nuit à partir de 25€</p>
-            <br />
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <div>
-            <h3 class="titre-hebergement">Hôtel chez Amina</h3>
-            <br />
-            <p class="prix">Nuit à partir de 25€</p>
-            <br />
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-        </div>
+          <figure class="card">
+            <img
+              src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+              alt="Auberge la Cannebière"
+            />
+            <figcaption>
+              <h3 class="card-title">Auberge la Cannebière</h3>
+              <br />
+              <p class="card-price">Nuit à partir de 25€</p>
+              <br />
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </figcaption>
+          </figure>
         <div><a href="#">Afficher plus</a></div>
       </div>
       <aside class="populaires"></aside>
