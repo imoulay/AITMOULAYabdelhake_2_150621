@@ -39,3 +39,105 @@ nav li a {
 .menu-nav:visited {
   color: gray;
 }
+.recherche-titre {
+  margin: 20px 0px;
+}
+.recherche form input {
+  width: 234px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #f2f2f2;
+  outline: none;
+}
+.recherche form button {
+  width: 135px;
+  height: 50px;
+  background-color: #0065fc;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border: none;
+}
+.recherche form i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 54px;
+  height: 50px;
+  border: 1px solid #f2f2f2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.recherche-champs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.filtres {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.filtres-btn ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+}
+.filtres-btn li {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  margin-bottom: 15px;
+}
+.filtres-btn li i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  background-color: #deebff;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.filtres-btn li a {
+  display: block;
+  margin-left: -50px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px;
+  border: 1px solid #f2f2f2;
+  border-radius: 60px;
+  padding-left: 60px;
+  z-index: -1;
+}
+.filtres-titre {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.filtres-infos {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.filtres-infos i {
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  border: 1px solid grey;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
