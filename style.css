@@ -1,43 +1,64 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 a {
   text-decoration: none;
-  transition: 0.2s;
+  color: #000000;
 }
 body {
   font-family: "Raleway", sans-serif;
-  margin-left: 30px;
+  min-width: 375px;
+}
+main {
+  margin: 0 2rem;
+}
+/* ******************* NAV ******************* */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav-img {
+  padding: 0 2rem;
+}
+.contenaire-nav {
+  display: flex;
 }
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 50px 0px 30px 0px;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
-nav ul {
-  display: flex;
-}
-nav li a {
-  margin-right: 50px;
-  color: #0065fc;
+.nav-a {
+  padding: 2rem;
+  border-top: 3px solid transparent;
+  transition: 0.2s;
 }
 .nav-connect {
+  display: flex;
+  align-items: center;
   font-weight: bold;
+  color: #0065fc;
+  padding: 2rem;
+  border-top: 3px solid transparent;
 }
 .nav-a:hover {
-  font-weight: bold;
-  border-top-width: 3px;
-  padding-block-start: 60px;
-  border-top-style: solid;
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
 }
 .menu-nav:visited {
   color: gray;
+}
+/* ******************* RECHERCHE ******************* */
+
+.recherche {
+  margin-bottom: 40px;
 }
 .recherche-titre {
   margin: 20px 0px;
@@ -54,6 +75,8 @@ nav li a {
 .recherche form button {
   width: 135px;
   height: 50px;
+  min-width: 50px;
+  min-height: 50px;
   background-color: #0065fc;
   color: white;
   font-size: 1rem;
@@ -67,10 +90,8 @@ nav li a {
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
-  padding: 10px;
-  width: 54px;
-  height: 50px;
-  border: 1px solid #f2f2f2;
+  min-width: 50px;
+  min-height: 50px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -79,6 +100,8 @@ nav li a {
   align-items: center;
   margin-bottom: 30px;
 }
+/* ******************* FILTRES ******************* */
+
 .filtres {
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +113,6 @@ nav li a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 20px;
 }
 .filtres-btn li {
   display: flex;
@@ -104,7 +126,6 @@ nav li a {
   align-items: center;
   color: #0065fc;
   background-color: #deebff;
-  padding: 10px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -114,9 +135,9 @@ nav li a {
   margin-left: -50px;
   font-size: 1rem;
   font-weight: bold;
-  padding: 15px;
-  border: 1px solid #f2f2f2;
-  border-radius: 60px;
+  padding: 14px;
+  border: 2px solid #d9d9d9;
+  border-radius: 40px;
   padding-left: 60px;
   z-index: -1;
 }
@@ -136,8 +157,87 @@ nav li a {
   justify-content: center;
   align-items: center;
   color: #0065fc;
-  border: 1px solid grey;
+  border: 1px solid #d9d9d9;
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  margin-right: 10px;
+}
+/* ******************* HEBERGEMENT ******************* */
+.heberg {
+}
+.heberg-contenaire {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+}
+.heberg h2 {
+  margin-bottom: 30px;
+}
+.heberg h3 {
+  font-size: 14px;
+}
+.hebergement {
+  display: flex;
+  background-color: #f2f2f2;
+  width: 70%;
+  padding: 40px;
+  border-radius: 20px;
+}
+.heberg-carte {
+  max-width: 250px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid white;
+  border-radius: 20px;
+  margin: 0px 30px 30px 0px;
+}
+.heberg-carte img {
+  max-width: 250px;
+  border-radius: 20px 20px 0px 0px;
+}
+figcaption {
+  margin: 10px;
+  line-height: 10px;
+}
+.heberg-carte-prix {
+  font-size: 0.8rem;
+}
+figcaption i {
+  font-size: 0.8rem;
+}
+/* ******************* POPULAIRES ******************* */
+
+.populaires {
+  background-color: #f2f2f2;
+  width: 30%;
+  padding: 40px;
+  border-radius: 20px;
+}
+/************************* Media Queries *************************/
+@media screen and (max-width: 600px) {
+  main {
+    margin: 0 2rem;
+  }
+  .nav {
+    justify-content: space-around;
+    flex-basis: 100%;
+    order: 2;
+  }
+  .nav a {
+    flex-basis: 50%;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+  }
+  .nav-a:hover {
+    color: #0065fc;
+    border-bottom: 3px solid #0065fc;
+    border-top: 3px solid transparent;
+  }
+  .nav-connect {
+    order: 1;
+  }
 }
