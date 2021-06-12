@@ -36,17 +36,22 @@
           <p>En plein centre ville ou en pleine nature</p>
         </div>
         <form class="recherche-champs">
-          <i class="fas fa-map-marker-alt"></i>
+          <div class="recherche-icone-emplacement">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
           <input
             type="search"
             name="recherche"
             placeholder="Marseille, France"
           />
-          <button>Recherche</button>
+          <button>
+            <span class="btn-titre">Recherche</span>
+            <i class="recherche-icone-recherche fas fa-search"></i>
+          </button>
         </form>
         <div class="recherche-filtres">
           <div class="filtres">
-            <span class="filtres-titre">Filtres</span>
+            <span class="titres">Filtres</span>
             <div class="filtres-btn">
               <ul>
                 <li>
@@ -75,144 +80,201 @@
         </div>
       </section>
 
-      <!------------------------ HEBERGEMENT & POPOLAIRES ------------------------>
-      <section class="hebergement">
-        <!-------------------- HEBERGEMENT --------------------------->
-        <div class="heberg">
+      <!------------------------ HEBERGEMENTS & POPOLAIRES ------------------------>
+      <section class="HebergementsEtPopulaires">
+        <!-------------------- HEBERGEMENTS --------------------------->
+        <div class="hebergements">
           <h2>Hébergement à Marseille</h2>
-          <div class="heberg-contenaire">
-            <figure class="heberg-carte">
+          <div class="hebergements-contenaire">
+            <figure class="hebergements-carte">
               <img
+                class="hebergements-carte-image"
                 src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt="Auberge la Cannebière"
+                alt="#"
               />
-
               <figcaption>
-                <h3 class="heberg-carte-titre">Auberge la Cannebière</h3>
+                <h3 class="hebergements-carte-titre">Auberge la Cannebière</h3>
                 <br />
-                <p class="heberg-carte-prix">
+                <p class="hebergements-carte-prix">
                   Nuit à partir de <strong>25€</strong>
                 </p>
                 <br />
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <div class="etoiles">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="etoileGrise fas fa-star"></i>
+                </div>
               </figcaption>
             </figure>
-            <figure class="heberg-carte">
+            <figure class="hebergements-carte">
               <img
+                class="hebergements-carte-image"
                 src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt="Auberge la Cannebière"
+                alt="#"
               />
-
               <figcaption>
-                <h3 class="heberg-carte-titre">Auberge la Cannebière</h3>
+                <h3 class="hebergements-carte-titre">Auberge la Cannebière</h3>
                 <br />
-                <p class="heberg-carte-prix">
+                <p class="hebergements-carte-prix">
                   Nuit à partir de <strong>25€</strong>
                 </p>
                 <br />
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <div class="etoiles">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="etoileGrise fas fa-star"></i>
+                </div>
               </figcaption>
             </figure>
-            <figure class="heberg-carte">
+            <figure class="hebergements-carte">
               <img
+                class="hebergements-carte-image"
                 src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt="Auberge la Cannebière"
+                alt="#"
               />
-
               <figcaption>
-                <h3 class="heberg-carte-titre">Auberge la Cannebière</h3>
+                <h3 class="hebergements-carte-titre">Auberge la Cannebière</h3>
                 <br />
-                <p class="heberg-carte-prix">
+                <p class="hebergements-carte-prix">
                   Nuit à partir de <strong>25€</strong>
                 </p>
                 <br />
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <div class="etoiles">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="etoileGrise fas fa-star"></i>
+                </div>
               </figcaption>
             </figure>
-            <figure class="heberg-carte">
+            <figure class="hebergements-carte">
               <img
+                class="hebergements-carte-image"
                 src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt="Auberge la Cannebière"
+                alt="#"
               />
-
               <figcaption>
-                <h3 class="heberg-carte-titre">Auberge la Cannebière</h3>
+                <h3 class="hebergements-carte-titre">Auberge la Cannebière</h3>
                 <br />
-                <p class="heberg-carte-prix">
+                <p class="hebergements-carte-prix">
                   Nuit à partir de <strong>25€</strong>
                 </p>
                 <br />
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <div class="etoiles">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="etoileGrise fas fa-star"></i>
+                </div>
               </figcaption>
             </figure>
-            <figure class="heberg-carte">
+            <figure class="hebergements-carte">
               <img
+                class="hebergements-carte-image"
                 src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt="Auberge la Cannebière"
+                alt="#"
               />
-
               <figcaption>
-                <h3 class="heberg-carte-titre">Auberge la Cannebière</h3>
+                <h3 class="hebergements-carte-titre">Auberge la Cannebière</h3>
                 <br />
-                <p class="heberg-carte-prix">
+                <p class="hebergements-carte-prix">
                   Nuit à partir de <strong>25€</strong>
                 </p>
                 <br />
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <div class="etoiles">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="etoileGrise fas fa-star"></i>
+                </div>
               </figcaption>
             </figure>
-            <figure class="heberg-carte">
+            <figure class="hebergements-carte">
               <img
+                class="hebergements-carte-image"
                 src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                alt="Auberge la Cannebière"
+                alt="#"
               />
-
               <figcaption>
-                <h3 class="heberg-carte-titre">Auberge la Cannebière</h3>
+                <h3 class="hebergements-carte-titre">Auberge la Cannebière</h3>
                 <br />
-                <p class="heberg-carte-prix">
+                <p class="hebergements-carte-prix">
                   Nuit à partir de <strong>25€</strong>
                 </p>
                 <br />
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <div class="etoiles">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="etoileGrise fas fa-star"></i>
+                </div>
               </figcaption>
             </figure>
           </div>
-          <div><a href="#">Afficher plus</a></div>
+          <div class="titres"><a href="#">Afficher plus</a></div>
         </div>
 
         <!-------------------- POPULAIRES --------------------------->
-        <div class="popul">
-          <aside class="populaires"></aside>
+        <!-- <aside class="populaires">
+          <div class="populaires-titre">
+            <h2>Les plus populaires</h2>
+          </div>
+          <figure class="carte_2">
+            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="#">
+              <figcaption>
+                <h3 class="hebergements-carte-titre">Auberge la Cannebière</h3>
+                <br />
+                <p class="hebergements-carte-prix">
+                  Nuit à partir de <strong>25€</strong>
+                </p>
+                <br />
+                <div class="etoiles">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="etoileGrise fas fa-star"></i>
+                </div>
+              </figcaption>
+        </aside> -->
+        <!-- <div>
+          <h2></h2>
+          <i></i>
         </div>
-      </section>
+        <div>
+          <div>
+            <img src="" alt="" />
+            <figcaption>
+              <h3></h3>
+              <p></p>
+              <div>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+            </figcaption>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+        <aside></aside>
+      </section> -->
 
       <!------------------------ ACTIVITES ------------------------>
-      <section class="activites"></section>
+      <section class="activites">
+        <h2></h2>
+        <div></div>
+      </section>
     </main>
     <footer>
       <div></div>
