@@ -44,8 +44,6 @@ h3 {
   font-size: 18px;
   font-weight: bold;
   margin-right: 20px;
-  margin-bottom: 20px;
-  margin-top: auto;
 }
 .prix-carte {
   font-size: 14px;
@@ -169,8 +167,7 @@ nav {
 .filtres-btn li {
   display: flex;
   align-items: center;
-  margin-right: 24px;
-  margin-bottom: 15px;
+  padding: 20px 20px 0 0;
 }
 .filtres-btn li i {
   display: flex;
@@ -181,6 +178,7 @@ nav {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  z-index: 1;
 }
 .filtres-titre {
   display: block;
@@ -191,7 +189,6 @@ nav {
   border: 2px solid #d9d9d9;
   border-radius: 40px;
   padding-left: 60px;
-  z-index: -1;
 }
 .filtres-infos {
   display: flex;
@@ -216,7 +213,6 @@ nav {
   grid-template-columns: 2fr 1fr;
   column-gap: 30px;
 }
-
 .hebergements {
   min-width: 310px;
   row-gap: 30px;
@@ -228,8 +224,6 @@ nav {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-}
-.hebergements-titre {
 }
 .hebergements-contenaire {
   display: grid;
@@ -244,28 +238,31 @@ nav {
   box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
   border-radius: 16px;
   display: grid;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 60% 40%;
   padding: 5px;
   cursor: pointer;
+  transition: 0.2s;
 }
-
+.hebergements-carte:hover {
+  transform: scale(1.05, 1.05);
+}
 .hebergements-carte-image {
   width: 100%;
   height: 110px;
   object-fit: cover;
   border-radius: 16px 16px 0 0;
 }
-
 .hebergements-description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   padding: 5px;
   background: white;
 }
 .hebergements-carte-prix {
   font-size: 13px;
+  margin-top: 10px;
 }
 .etoiles {
   display: flex;
@@ -273,12 +270,10 @@ nav {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 5px;
+  margin: 10px 0;
 }
 .etoileGrise {
   color: gray;
-}
-figcaption {
 }
 
 /* ******************* POPULAIRES ******************* */
@@ -300,15 +295,6 @@ figcaption {
   grid-template-rows: repeat(3, 1fr);
   row-gap: 30px;
 }
-.populaires-titres-prix {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  align-content: space-around;
-  height: 60%;
-  justify-content: space-evenly;
-}
 .populaires-titre {
   display: flex;
   width: 100%;
@@ -316,6 +302,7 @@ figcaption {
   align-items: center;
 }
 .populaires-carte {
+  height: 144px;
   background-color: white;
   box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
   border-radius: 16px;
@@ -323,10 +310,14 @@ figcaption {
   grid-template-columns: 4fr 5fr;
   padding: 5px;
   cursor: pointer;
+  transition: 0.2s;
+}
+.populaires-carte:hover {
+  transform: scale(1.05, 1.05);
 }
 .populaires-carte-image {
   width: 100%;
-  height: 110px;
+  height: 144px;
   object-fit: cover;
   border-radius: 16px 0 0 16px;
 }
@@ -384,10 +375,15 @@ figcaption {
   margin-bottom: 26px;
 }
 .activites-carte {
+  height: 100%;
   box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
   border-radius: 16px;
   position: relative;
   cursor: pointer;
+  transition: 0.2s;
+}
+.activites-carte:hover {
+  transform: scale(1.05, 1.05);
 }
 .activites-carte-image {
   width: 100%;
