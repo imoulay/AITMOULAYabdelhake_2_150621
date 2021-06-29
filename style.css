@@ -9,14 +9,7 @@ a {
   text-decoration: none;
   color: #000000;
 }
-/* .fa,
-.fab,
-.fad,
-.fal,
-.far,
-.fas {
-  display: block;
-} */
+
 .fa-star {
   color: #0065fc;
   font-size: 12px;
@@ -30,11 +23,7 @@ main {
   margin: 0 32px;
 }
 /* ******************* ELEMENTS ******************* */
-h1 {
-  font-size: 24px;
-}
-
-h2 {
+h1 h2 {
   font-size: 24px;
 }
 h3 {
@@ -44,19 +33,6 @@ h3 {
   font-size: 18px;
   font-weight: bold;
   margin-right: 20px;
-}
-.prix-carte {
-  font-size: 14px;
-}
-.carte_2 {
-  background-color: white;
-  padding: 6px;
-  border-radius: 1.25rem;
-  box-shadow: 0 0 16px #0000002e;
-  transition-duration: 0.1s;
-  cursor: pointer;
-  box-sizing: border-box;
-  height: 100%;
 }
 
 /* ******************* NAV ******************* */
@@ -69,9 +45,6 @@ header {
 
 .nav-img {
   padding: 0 2rem;
-}
-.contenaire-nav {
-  display: flex;
 }
 nav {
   display: flex;
@@ -96,9 +69,7 @@ nav {
   color: #0065fc;
   border-top: 3px solid #0065fc;
 }
-.menu-nav:visited {
-  color: gray;
-}
+
 /* ******************* RECHERCHE ******************* */
 
 .recherche {
@@ -168,6 +139,10 @@ nav {
   display: flex;
   align-items: center;
   padding: 20px 20px 0 0;
+  transition: 0.2s;
+}
+.filtres-btn li:hover {
+  transform: scale(1.05, 1.05);
 }
 .filtres-btn li i {
   display: flex;
@@ -183,12 +158,11 @@ nav {
 .filtres-titre {
   display: block;
   margin-left: -50px;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: bold;
-  padding: 14px;
+  padding: 14px 14px 14px 60px;
   border: 2px solid #d9d9d9;
   border-radius: 40px;
-  padding-left: 60px;
 }
 .filtres-infos {
   display: flex;
