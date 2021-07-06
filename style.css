@@ -373,14 +373,13 @@ nav {
   padding: 20px;
   border-radius: 0 0 16px 16px;
 }
-/* ******************* ACTIVITES ******************* */
+/* ******************* FOOTER ******************* */
 footer {
   background: #f2f2f2;
   display: flex;
   padding: 30px;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  column-gap: 100px;
+  justify-content: flex-start;
   flex-direction: row;
 }
 .BasDePage {
